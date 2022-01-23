@@ -11,9 +11,11 @@
   <body>
     <div class="container">
       <!-- Clock -->
-      <div>
+      <div class="clock__area">
+        <h2 class="clock__title">현재시간</h2>
         <h2 class="clock" id="clock">00:00:00</h2>
       </div>
+
       <!-- Hello Form -->
       <div class="form">
         <form class="hello__form hidden" id="login-form">
@@ -28,7 +30,7 @@
         <span class="quote" id="quote">XXXXXXXXXXXXXX</span>
         <span class="author" id="author">XXXXXXXXXXXXXX</span>
       </div>
-      <div class="todo">
+      <div class="todo" id="todo">
         <form action="" class="todo__form" id="todo-form">
           <input class="todo__form--input" id="todo-input" type="text" placeholder="Write a To Do and Press Enter" required />
         </form>

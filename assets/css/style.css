@@ -19,10 +19,21 @@ body {
   position: relative;
 }
 
-.clock {
-  font-size: 2rem;
-  padding: 1rem 0;
+.clock__area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.875rem;
+  padding: 3rem 2rem;
+  color: #ffff;
+  font-weight: 600;
+  text-align: center;
 }
+
+.clock__title {
+  padding: 0.5rem 0;
+}
+
 .clock,
 .form,
 .quotes {
@@ -103,10 +114,17 @@ body {
 /* todo__list */
 
 .todo {
-  display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+}
+
+.toto__activity {
+  display: flex;
+}
+
+.totod__hidden {
+  display: none;
 }
 
 .todo__form--input {
@@ -115,20 +133,30 @@ body {
   border-radius: 3rem;
   font-weight: 600;
   text-align: center;
+  border: none;
+  outline: none;
 }
 
 .todo__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 2rem;
   color: #ffff;
-}
-
-.todo__list span {
-}
-.todo__list span:last-child {
+  gap: 0.25rem;
 }
 
 .todo__list li {
   list-style: decimal;
+}
+
+.todo__list li button {
+  border-radius: 5px;
+  margin-left: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: red;
+  color: white;
 }
 
 /* Weather */
