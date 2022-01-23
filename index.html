@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Momentum App</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Clock -->
+      <div>
+        <h2 class="clock" id="clock">00:00:00</h2>
+      </div>
+      <!-- Hello Form -->
+      <div class="form">
+        <form class="hello__form hidden" id="login-form">
+          <div class="hello__form--username">
+            <label class="hello__form--input--label" for="login-input">Hello, What's your name?</label>
+            <input class="hello__form--input" maxlength="15" id="login-input" type="text" placeholder="" required />
+          </div>
+        </form>
+        <h1 class="hello" id="greeting"></h1>
+      </div>
+      <div class="quotes" id="quotes">
+        <span class="quote" id="quote">XXXXXXXXXXXXXX</span>
+        <span class="author" id="author">XXXXXXXXXXXXXX</span>
+      </div>
+      <div class="todo">
+        <form action="" class="todo__form" id="todo-form">
+          <input class="todo__form--input" id="todo-input" type="text" placeholder="Write a To Do and Press Enter" required />
+        </form>
+        <ul class="todo__list" id="todo-list"></ul>
+      </div>
+      <div class="weather" id="weather">
+        <span id="weather-city"></span>
+        <span id="weather-temp"></span>
+        <span id="weather-sky"></span>
+      </div>
+    </div>
+    <!-- Backgound Image -->
+    <div class="background"></div>
+
+    <script src="./assets/js/greeting.js"></script>
+    <script src="./assets/js/clock.js"></script>
+    <script src="./assets/js/quotes.js"></script>
+    <script src="./assets/js/background.js"></script>
+    <script src="./assets/js/todo.js"></script>
+    <script src="./assets/js/weather.js"></script>
+  </body>
+</html>

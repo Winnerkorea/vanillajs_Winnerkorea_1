@@ -1,0 +1,150 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Mochiy+Pop+P+One&display=swap");
+
+/* REST CSS */
+@import "./reset.css";
+
+/* Design CSS */
+
+body {
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.clock {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+.clock,
+.form,
+.quotes {
+  color: #ffffff;
+}
+
+.hello__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hello__form--username {
+  display: flex;
+  flex-direction: column;
+}
+
+.hello__form--input--label,
+.hello__form--input,
+.hello {
+  font-size: 3rem;
+  font-weight: 600;
+  padding: 1.2rem 0rem;
+  text-align: center;
+}
+
+.hello__form--input {
+  border: none;
+  border-bottom: 3px solid white;
+  background: none;
+}
+
+.hello__form--input::placeholder,
+.hello__form--input:focus {
+  color: white;
+  background: none;
+}
+
+.hello__form--input:focus-visible {
+  outline: none;
+}
+
+.quotes {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  bottom: 0;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.quote {
+  padding: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.author {
+  font-size: 0.75rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Backgroudn Image */
+
+.background img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -100;
+  height: 100%;
+  width: 100%;
+}
+
+/* todo__list */
+
+.todo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.todo__form--input {
+  padding: 0.875rem 2rem;
+  width: 25rem;
+  border-radius: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.todo__list {
+  margin-top: 2rem;
+  color: #ffff;
+}
+
+.todo__list span {
+}
+.todo__list span:last-child {
+}
+
+.todo__list li {
+  list-style: decimal;
+}
+
+/* Weather */
+
+.weather {
+  position: absolute;
+  font-size: 0.745rem;
+  padding: 3rem 5rem;
+  color: #ffff;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.weather span {
+  padding: 0.5rem 0;
+  text-align: center;
+}
